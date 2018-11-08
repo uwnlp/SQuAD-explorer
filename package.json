@@ -20,7 +20,9 @@
     "moment": "^2.17.1",
     "nightmare": "^2.9.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-build": "^0.5.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
