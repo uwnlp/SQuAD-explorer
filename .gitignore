@@ -1,5 +1,5 @@
 node_modules/
-piqa-web/
+SQuAD-explorer/
 .publish/
 bower_components/
 *.DS_Store
