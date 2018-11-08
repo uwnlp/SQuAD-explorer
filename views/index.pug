@@ -4,7 +4,7 @@ block title
   title Phrase Indexed Question Answering
 
 block description
-  meta(name='description', content='Stanford Question Answering Dataset (SQuAD) is a new reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage. With 100,000+ question-answer pairs on 500+ articles, SQuAD is significantly larger than previous reading comprehension datasets.')
+  meta(name='description', content='UW Question Answering Dataset (SQuAD) is a new reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage. With 100,000+ question-answer pairs on 500+ articles, SQuAD is significantly larger than previous reading comprehension datasets.')
 
 block extralinks
   link(rel='stylesheet', href='/stylesheets/index.css')
@@ -106,24 +106,22 @@ block content
           .infoCard
             .infoBody
               .infoHeadline
-                h2 What is SQuAD?
+                h2 What is PIQA?
               p 
                 span
-                  b S
-                  |tanford 
-                  b Qu
-                  |estion 
+                  b P
+                  |hrase 
+                  b I
+                  |ndexed 
+                  b Q
+                  |uestion 
                   b A
-                  |nswering 
-                  b D
-                  |ataset (SQuAD) 
-                | is a hoho reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or 
-                i span
-                | , from the corresponding reading passage, or the question might be unanswerable.
+                  |nswering (PIQA) 
+                | is an extractive question answering task with the constraint of independence between the document encoder and the question encoder.
               hr
               p
                 span.label.label-default New
-                b  SQuAD2.0
+                b  PIQA
                 |  combines the 100,000 questions in SQuAD1.1 with over 50,000 new, unanswerable questions written adversarially by crowdworkers to look similar to answerable ones. To do well on SQuAD2.0, systems must not only answer questions when possible, but also determine when no answer is supported by the paragraph and abstain from answering.
                 | SQuAD2.0 is a challenging natural language understanding task for existing models, and we release SQuAD2.0 to the community as the successor to SQuAD1.1. 
                 | We are optimistic that this new dataset will encourage the development of reading comprehension systems that know what they don't know.
