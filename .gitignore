@@ -3,6 +3,7 @@ piqa-web/
 .publish/
 bower_components/
 *.DS_Store
+*.swp
 
 development.json
 
