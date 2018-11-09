@@ -1,11 +1,10 @@
 {
-  "name": "squad-explorer",
+  "name": "piqa-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "The [Stanford Question Answering Dataset](https://stanford-qa.com) is a large reading comprehension dataset. This repository is intended to let people explore the dataset and visualize model predictions.",
   "main": "gulpfile.js",
   "dependencies": {
     "cheerio": "^0.22.0",
-    "gulp": "^3.9.1",
     "gulp-bower": "0.0.14",
     "gulp-connect": "^5.0.0",
     "gulp-data": "^1.2.1",
@@ -20,18 +19,20 @@
     "moment": "^2.17.1",
     "nightmare": "^2.9.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rajpurkar/SQuAD-explorer.git"
+    "url": "git+https://github.com/uwnlp/piqa-web.git"
   },
-  "author": "Pranav Rajpurkar",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rajpurkar/SQuAD-explorer/issues"
+    "url": "https://github.com/uwnlp/piqa-web/issues"
   },
-  "homepage": "https://github.com/rajpurkar/SQuAD-explorer#readme"
+  "homepage": "https://github.com/uwnlp/piqa-web#readme"
 }
