@@ -126,7 +126,7 @@
 }
 .alert {
   color: #fff;
-  background-color: #f8e86d;
+  background-color: #ffe62d;
   font-weight: 600;
   padding: 10px;
   border: none;
@@ -213,7 +213,7 @@
   font-weight: 400;
 }
 .infoCard .infoSubheadline.backgrounded {
-  background: #f8e86d;
+  background: #ffe62d;
 }
 .infoCard .infoSubheadline.backgrounded h1,
 .infoCard .infoSubheadline.backgrounded h2,
@@ -221,7 +221,7 @@
   color: #fff;
 }
 .infoCard .actLink {
-  background: #f8e86d;
+  background: #ffe62d;
 }
 .infoCard .actLink h1,
 .infoCard .actLink h2,
@@ -259,27 +259,27 @@
   font-size: 1.6em;
 }
 .actionBtn:hover {
-  background-color: #f4dc26;
-  border-color: #f4dc26;
+  background-color: #f2153f;
+  border-color: #f2153f;
 }
 .actionBtn {
   display: block;
   margin: 10px auto;
   max-width: 350px;
   width: 100%;
-  background-color: #ffe62d;
+  background-color: #ffc30f;
   color: #fff !important;
   text-align: center;
   font-size: 1em;
   font-weight: 600;
-  border: 2px solid #ffe62d;
+  border: 2px solid #ffc30f;
   border-radius: 20px;
   transition: all 0.5s;
   white-space: normal;
 }
 .inverseBtn {
   background-color: #fff;
-  color: #ffe62d !important;
+  color: #ffc30f !important;
 }
 .inverseBtn:hover {
   color: #fff !important;
@@ -303,7 +303,7 @@ button:focus {
 }
 #topNavbar {
   border: none;
-  background: #f4dc26;
+  background: #f2153f;
   margin-bottom: 0px;
 }
 #topNavbar .leftNav {
@@ -364,7 +364,7 @@ button:focus {
   }
 }
 #topCover {
-  background: #ffe62d;
+  background: #ffc30f;
   box-shadow: 0px -10px 20px 2px rgba(120,120,120,0.2) inset;
   min-height: initial;
 }
@@ -442,13 +442,13 @@ body {
   background-color: #fff;
 }
 a {
-  color: #ffe62d;
+  color: #ffc30f;
 }
 a:hover,
 a:active,
 a:focus {
   text-decoration: none !important;
-  color: #f4dc26;
+  color: #f2153f;
 }
 ul {
   margin: 0px;
