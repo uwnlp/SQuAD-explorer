@@ -1,12 +1,13 @@
 {
-  "name": "squad-explorer",
+  "name": "piqa-web",
   "description": "",
   "main": "gulpfile.js",
   "authors": [
-    "Pranav Rajpurkar"
+    "Mjinjoon Seo",
+    "Jinhyuk Lee"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/rajpurkar/SQuAD-explorer",
+  "homepage": "https://github.com/uwnlp/piqa-web",
   "private": true,
   "ignore": [
     "**/.*",
