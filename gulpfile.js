@@ -62,7 +62,7 @@ var parseCompEntries = function (comp_file) {
       entry.em = parseFloat(o_entry.scores.exact_match)
       entry.f1 = parseFloat(o_entry.scores.f1)
       if (!(entry.em >= 0)) throw 'Score invalid'
-      if (entry.em < 50) throw 'Score too low'
+      //if (entry.em < 50) throw 'Score too low'
       if (entry.model_name === '') {
         entry.model_name = 'Unnamed submission by ' + entry.user
       }
@@ -255,6 +255,6 @@ gulp.task('deploy', function () {
     .pipe(ghPages())
 })
 
-gulp.task('generate_exploration', exploration_tasks)
-gulp.task('generate', ['bower', 'generate_exploration', 'generate_index', 'process_comp_output'])
+// gulp.task('generate_exploration', exploration_tasks)
+gulp.task('generate', ['bower', 'generate_index', 'process_comp_output'])
 gulp.task('default', ['generate', 'correct_link_paths', 'image', 'js', 'css', 'copy_dataset', 'copy_models'])
