@@ -120,7 +120,7 @@
 @font-face {
   font-family: 'Lato';
   src: url("/bower_components/lato-webfont/fonts/lato-blackitalic.eot");
-  src: url("/bower_components/lato-webfont/fonts/lato-blackitalic.eot?#iefix") format("embedded-opentype"), url("/bower_components/lato-webfont/fonts/lato-blackitalic.woff2") format("woff2"), url("/bower_components/lato-webfont/fonts/lato-blackitalic.woff") format("woff"), url("/bower_components/lato-webfont/fonts/lato-blackitalic.ttf") format("truetype");
+  src: url("/bower_components/lato-webfont/fonts/lato-blackitalic.eot?#iefix") format("embedded-opentype"), url("/bower_components/lato-webfont/fonts/lato-blackitalic.woff2") format("woff2"), url("/bower_components/lato-webfont/fonts/lato-blackitalic.woff") format("woff"), url("/piqa-web/bower_components/lato-webfont/fonts/lato-blackitalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
 }
