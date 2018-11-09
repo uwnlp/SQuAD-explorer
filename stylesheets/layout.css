@@ -259,8 +259,8 @@
   font-size: 1.6em;
 }
 .actionBtn:hover {
-  background-color: #f2153f;
-  border-color: #f2153f;
+  background-color: #e6ac00;
+  border-color: #e6ac00;
 }
 .actionBtn {
   display: block;
@@ -303,7 +303,7 @@ button:focus {
 }
 #topNavbar {
   border: none;
-  background: #f2153f;
+  background: #e6ac00;
   margin-bottom: 0px;
 }
 #topNavbar .leftNav {
@@ -448,7 +448,7 @@ a:hover,
 a:active,
 a:focus {
   text-decoration: none !important;
-  color: #f2153f;
+  color: #e6ac00;
 }
 ul {
   margin: 0px;
