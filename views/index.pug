@@ -1,10 +1,10 @@
 extends layout
 
 block title
-  title The Stanford Question Answering Dataset
+  title Phrase Indexed Question Answering
 
 block description
-  meta(name='description', content='Stanford Question Answering Dataset (SQuAD) is a new reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage. With 100,000+ question-answer pairs on 500+ articles, SQuAD is significantly larger than previous reading comprehension datasets.')
+  meta(name='description', content='We formalize a new modular variant of current question answering tasks by enforcing complete independence of the document encoder from the question encoder. This formulation addresses a key challenge in machine comprehension by requiring a standalone representation of the document discourse. It additionally leads to a significant scalability advantage since the encoding of the answer candidate phrases in the document can be pre-computed and indexed offline for efficient retrieval. We experiment with baseline models for the new task, which achieve a reasonable accuracy but significantly underperform unconstrained QA models. We invite the QA research community to engage in Phrase-Indexed Question Answering (PIQA, pika) for closing the gap.')
 
 block extralinks
   link(rel='stylesheet', href='/stylesheets/index.css')
@@ -106,35 +106,29 @@ block content
           .infoCard
             .infoBody
               .infoHeadline
-                h2 What is SQuAD?
+                h2 What is PIQA?
               p 
                 span
-                  b S
-                  |tanford 
-                  b Qu
-                  |estion 
+                  b P
+                  |hrase-
+                  b I
+                  |ndexed 
+                  b Q
+                  |uestion 
                   b A
-                  |nswering 
-                  b D
-                  |ataset (SQuAD) 
-                | is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or 
-                i span
-                | , from the corresponding reading passage, or the question might be unanswerable.
+                  |nswering (PIQA) 
+                | is a new variant of question answering tasks with complete 
+		i independence
+		| of the document encoder from the question encoder. This task addresses a key challenge in machine comprehension by requiring a standalone representation of the document discourse. It additionally leads to a significant scalability advantage since the encoding of the answer candidate phrases in the document can be pre-computed and indexed offline for efficient answer retrieval. We invite the QA research community to engage in Phrase-Indexed Question Answering (PIQA, pika) for closing the gap between PIQA baseline models and unconstrained QA models.
               hr
               p
-                span.label.label-default New
-                b  SQuAD2.0
-                |  combines the 100,000 questions in SQuAD1.1 with over 50,000 new, unanswerable questions written adversarially by crowdworkers to look similar to answerable ones. To do well on SQuAD2.0, systems must not only answer questions when possible, but also determine when no answer is supported by the paragraph and abstain from answering.
-                | SQuAD2.0 is a challenging natural language understanding task for existing models, and we release SQuAD2.0 to the community as the successor to SQuAD1.1. 
-                | We are optimistic that this new dataset will encourage the development of reading comprehension systems that know what they don't know.
-              a.btn.actionBtn(href="/explore/v2.0/dev/") Explore SQuAD2.0 and model predictions
-              a.btn.actionBtn(href="http://arxiv.org/abs/1806.03822") SQuAD2.0 paper (Rajpurkar & Jia et al. '18)
+                b  PIQA
+                |  uses 
+		a(href="https://arxiv.org/abs/1606.05250")SQuAD1.1
+		for the evaluation. 
+              a.btn.actionBtn(href="https://arxiv.org/abs/1804.07726") PIQA paper (Seo et al. EMNLP 2018)
               hr
               p
-                b  SQuAD 1.1,
-                |  the previous version of the SQuAD dataset, contains 100,000+ question-answer pairs on 500+ articles.
-              a.btn.actionBtn(href="/explore/1.1/dev/") Explore SQuAD1.1 and model predictions
-              a.btn.actionBtn(href="http://arxiv.org/abs/1606.05250") SQuAD1.0 paper (Rajpurkar et al. '16)
               .infoHeadline
                 h2 Getting Started
               p
