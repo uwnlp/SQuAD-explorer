@@ -29,7 +29,7 @@ mixin piqa_model_display(group, is_test)
         td
           | BERT (single model) - Unconstrained
           p.institution Google AI Language
-          a(href="https://arxiv.org/abs/1810.04805") (Devlin et al., '18)
+          a(href="https://arxiv.org/abs/1810.04805") Devlin et al., '18
         td 85.083
         td 91.835
       tr.human-row
@@ -37,7 +37,7 @@ mixin piqa_model_display(group, is_test)
         td
           | Human Performance
           p.institution Stanford University
-          a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar & Jia et al. '18)
+          a(href="http://arxiv.org/abs/1606.05250") Rajpurkar & Jia et al., '18
         td #{human_em}
         td #{human_f1}
     each model in group
@@ -108,7 +108,13 @@ block content
                 |  to split the original dataset into contexts and questions, and then use 
                 code
                   | merge.py
-                |  to generate the prediction file. We strongly encourage you to read through the encoding procedure described in 
+                |  to generate the prediction file. All you need to do is to provide context and question embeddings in 
+                code
+                  | context_emb/
+                |  and  
+                code
+                  | question_emb/
+                |  folders. We strongly encourage you to read through the encoding procedure described in 
                 a(href="https://github.com/uwnlp/piqa/tree/master/squad") PIQA github page.
               p
                 | To evaluate your models, we use the official evaluation script provided by SQuAD1.1, along with a sample prediction file that the script will take as input.
@@ -120,7 +126,7 @@ block content
                     a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/bundles/0x8731effab84f41b7b874a070e40f61e2/", download)
                       | Sample Prediction File (on Dev v1.1)
               p Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores on the dev and a hidden test set. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model:
-              a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x8212d84ca41c4150b555a075b19ccc05/")
+              a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x58f20753fb784ffaa37877f777057b17/")
                 | Submission Tutorial
               p To keep up to date with major changes to the PIQA challenge, please subscribe:
               include includes/mailchimp

@@ -135,7 +135,7 @@
             },
             "submission": {
                 "created": 1538768277,
-                "description": "TF-IDF (baseline) https://arxiv.org/abs/1804.07726",
+                "description": "TF-IDF (PIQA baseline) https://arxiv.org/abs/1804.07726",
                 "num_period_submissions": 0,
                 "num_total_submissions": 2,
                 "public": true,
@@ -215,7 +215,7 @@
             },
             "submission": {
                 "created": 1538759735,
-                "description": "LSTM (baseline) https://arxiv.org/abs/1804.07726",
+                "description": "LSTM (PIQA baseline) https://arxiv.org/abs/1804.07726",
                 "num_period_submissions": 0,
                 "num_total_submissions": 2,
                 "public": true,
@@ -295,7 +295,7 @@
             },
             "submission": {
                 "created": 1538759735,
-                "description": "LSTM + SA (baseline) https://arxiv.org/abs/1804.07726",
+                "description": "LSTM + SA (PIQA baseline) https://arxiv.org/abs/1804.07726",
                 "num_period_submissions": 0,
                 "num_total_submissions": 2,
                 "public": true,
