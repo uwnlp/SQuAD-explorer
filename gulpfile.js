@@ -218,12 +218,13 @@ filepaths.forEach(function (filename) {
 
 gulp.task('process_comp_output', function (cb) {
   var jsonfile = require('jsonfile')
-  var entries1 = parseCompEntries('./out-v1.1.json')
-  var entries2 = parseCompEntries('./out-v2.0.json')
-  jsonfile.writeFile('./results1.1.json', entries1, function (err){
-    if (err) return cb(err)
-    jsonfile.writeFile('./results2.0.json', entries2, cb)
-  })
+  var entries1 = parseCompEntries('./out-piqa.json')
+  // var entries2 = parseCompEntries('./out-v2.0.json')
+  // jsonfile.writeFile('./results1.1.json', entries1, function (err){
+  //   if (err) return cb(err)
+  //   jsonfile.writeFile('./results2.0.json', entries2, cb)
+  // })
+  jsonfile.writeFile('./results1.1.json', entries1, cb)
 })
 
 gulp.task('generate_index', ['process_comp_output'], function () {

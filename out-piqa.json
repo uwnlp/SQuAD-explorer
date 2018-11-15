@@ -1,0 +1,147 @@
+{
+    "config": {
+        "allow_multiple_models": true,
+        "allow_orphans": true,
+        "count_failed_submissions": true,
+        "evaluate": {
+            "command": "python evaluate.py dev.json predictions.json",
+            "dependencies": [
+                {
+                    "child_path": "evaluate.py",
+                    "parent_path": "",
+                    "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                },
+                {
+                    "child_path": "dev.json",
+                    "parent_path": "",
+                    "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                },
+                {
+                    "child_path": "predictions.json",
+                    "parent_path": "",
+                    "parent_uuid": "{predict}"
+                }
+            ],
+            "metadata": {
+                "request_docker_image": "codalab/ubuntu:1.9"
+            },
+            "tag": "pi-dauqs-test-eval"
+        },
+        "host": "https://worksheets.codalab.org",
+        "log_worksheet_uuid": "0x084ff87b12b644e2aa93ef81157a18ad",
+        "make_predictions_public": false,
+        "max_leaderboard_size": 10000,
+        "max_submissions_per_period": 5,
+        "max_submissions_total": 20,
+        "metadata": {
+            "name": "Phrase-Indexed SQuAD Competition Leaderboard"
+        },
+        "predict": {
+            "depth": 10,
+            "metadata": {},
+            "mimic": [
+                {
+                    "new": "0x9ee64ab986174e62a23cbe54a2b875fd",
+                    "old": "0x8f29fe78ffe545128caccab74eb06c57"
+                }
+            ],
+            "tag": "pi-dauqs-test-predict"
+        },
+        "quota_period_seconds": 86400,
+        "refresh_period_seconds": 60,
+        "score_specs": [
+            {
+                "key": "/stdout:f1",
+                "name": "f1"
+            },
+            {
+                "key": "/stdout:exact_match",
+                "name": "exact_match"
+            }
+        ],
+        "submission_tag": "pi-squad-test-submit"
+    },
+    "leaderboard": [
+        {
+            "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x7ee8516a4f2347849d0d1a47395be937 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": "0xb8ff731ea9afde55b41504115773ba552ab1d151",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xb28f151a64814335a8517e21195295ed",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0xb28f151a64814335a8517e21195295ed",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xb28f151a64814335a8517e21195295ed",
+                        "parent_name": "minjoon-predictions-ELMo-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x7ee8516a4f2347849d0d1a47395be937"
+                    }
+                ],
+                "id": "0xb28f151a64814335a8517e21195295ed",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1541225252,
+                    "data_size": 4155,
+                    "description": "{\"submit_id\": \"0x4b681dc152e04c71ad65cf8e570924a0\", \"predict_id\": \"0x7ee8516a4f2347849d0d1a47395be937\", \"submitter_id\": \"f285841415af419abb0bc88715cab3cc\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1541226944,
+                    "name": "minjoon-predictions-ELMo-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1541226906,
+                    "tags": [
+                        "pi-dauqs-test-eval"
+                    ],
+                    "time": 17.2258160114
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xb28f151a64814335a8517e21195295ed"
+            },
+            "scores": {
+                "exact_match": 52.55428511486416,
+                "f1": 62.7425189021518
+            },
+            "submission": {
+                "created": 1540610882,
+                "description": "LSTM + SA + ELMo (PIQA baseline) https://arxiv.org/abs/1804.07726",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "minjoon"
+            }
+        }
+    ],
+    "updated": 1541227037.589607
+}
